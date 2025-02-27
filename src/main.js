@@ -41,7 +41,7 @@ record.onclick = () => {
 
 const timer = setInterval(function () {
   if (cyclist.started) {
-    const deg = (cyclist.cycle % 1) % 360;
+    const deg = (cyclist.cycle % 1) * 360;
     record.style.webkitTransform = 'rotate(' + deg + 'deg)';
     record.style.mozTransform = 'rotate(' + deg + 'deg)';
     record.style.msTransform = 'rotate(' + deg + 'deg)';
